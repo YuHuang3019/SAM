@@ -1,0 +1,63 @@
+&SGS_TKE
+dosmagor = .true.
+/
+
+&PARAMETERS
+
+caseid ='LBA_250x_5t_MG_'
+
+dx =   250.,
+dy =   250.,
+dt =   5.,
+nstop    = 17280,
+nprint   = 360,
+nstat    = 360,
+nstatfrq = 60,
+nrestart = 0,
+restart_sep = .true.,
+output_sep  = .true.,
+
+nsave2D        = 360,
+nsave2Dstart   = 5040.,
+nsave2Dend     = 13680.,
+save2Dsep      = .false.,
+save2Davg      = .true.,
+nsave3D        = 360,
+nsave3Dstart   = 5040.,
+nsave3Dend     = 13680.,
+save3Dbin      = .false.
+
+CEM = .true.,
+LAND = .true.,
+
+dosgs	       = .true.,
+dodamping      = .true.,
+doupperbound   = .true.,
+docloud        = .true.,
+doprecip       = .true., 
+dolongwave     = .true.,
+doshortwave    = .true.,
+dosurface      = .true.,
+dolargescale   = .false.,
+doradforcing   = .true.,
+nrad           = 720.,
+
+dosfcforcing    = .true.,
+docoriolis 	= .false.,
+donudging_uv    = .true.,
+donudging_tq    = .false.,
+
+tauls = 7200.,
+
+SFC_FLX_FXD    = .true.,
+SFC_TAU_FXD    = .false.,
+
+day0=0.,
+
+doSAMconditionals = .true.
+dosatupdnconditionals = .true.
+
+/ 
+
+
+

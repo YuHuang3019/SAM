@@ -1,0 +1,14 @@
+#!/bin/bash
+for i in {285..305}
+do
+ ./stat2nc ./RCE_runs_Ug_1_lowres/SAM_RCE_SST_$i/OUT_STAT/RCE_eq_RCE_SST$i.stat  
+done
+do
+ ./stat2nc ./RCE_runs_Ug_10_lowres/SAM_RCE_SST_$i/OUT_STAT/RCE_eq_RCE_SST$i.stat
+done
+do
+ ./stat2nc ./RCE_runs_Ug_1/SAM_RCE_SST_$i/OUT_STAT/RCE_eq_RCE_SST$i.stat
+done
+do
+ ./stat2nc ./RCE_runs_Ug_1/SAM_RCE_SST_$i/OUT_STAT/RCE_eq_RCE_SST$i.stat
+done

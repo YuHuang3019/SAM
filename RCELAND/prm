@@ -1,0 +1,153 @@
+&SGS_TKE
+
+ dosmagor       = .true.,
+
+/
+
+ &PARAMETERS
+
+ nrestart = 1
+
+ caseid = Ocean_Ug_1,
+
+ nseedincrement = 1, 
+
+ CEM = .true.,
+
+ OCEAN = .true.,
+
+ LAND = .false.,
+
+ dosstnudging = .false.,
+
+ tau_nudge   =  0.0208333,
+
+ t_sst_nudge = 300.88,
+
+ dosgs          = .true.,
+
+ dodamping      = .true.,
+
+ doupperbound   = .true.,
+
+ docloud        = .true.,
+
+ doprecip       = .true.,
+
+ dolongwave     = .true.,
+
+ doshortwave    = .true.,
+
+ dosurface      = .true.,
+
+ dolargescale   = .false.,
+
+ doradforcing   = .false.,
+
+ dosfcforcing   = .false.,
+
+ docoriolis     = .false.,
+
+ donudging_uv   = .true.,
+
+ donudging_tq   = .true.,
+
+ nudging_uv_z1  = 2000.,
+
+ nudging_uv_z2  = 16000.,
+
+ nudging_t_z1  = 2000.,
+
+ nudging_t_z2  = 16000.,
+
+ nudging_q_z1  = 2000.,
+
+ nudging_q_z2  = 16000.,
+
+ tauls = 21600.,
+
+ tautqls = 21600., 
+
+ ncycle_max  = 10, 
+
+ dodynamicocean = .false.,
+
+ depth_slab_ocean = 0.05,
+
+ SFC_FLX_FXD = .false.,
+
+ SFC_TAU_FXD = .false.,
+
+ tabs_s  =   300     ,
+
+ dx =   500.,
+
+ dy =   500.,
+
+ dt =   10.,
+
+ latitude0= 0.1,
+
+ longitude0=0.,
+
+ nrad = 30,
+
+ day0=0,
+
+ doisccp=.false.,
+
+ domodis=.false.,
+
+ domisr=.false.,
+
+ nstop          = 25920,
+
+ nprint         = 1080,
+
+ nstat          = 360,
+
+ nstatfrq       = 60,
+
+ doSAMconditionals = .true.
+
+ dosatupdnconditionals = .true.
+
+ nsave2D        = 720,
+
+ nsave2Dstart   = 0,
+
+ nsave2Dend     = 99960480,
+
+ nsave3D        = 1080,
+
+ nsave3Dstart   = 0,
+
+ nsave3Dend     = 99998640,
+
+ nstatmom       = 180,
+
+ nstatmomstart  = 0,
+
+ nstatmomend    = 99960480,
+
+savemombin = .true.,
+
+ nmovie       = 99998640
+
+ nmoviestart  = 99998640
+
+ nmovieend    = 99960480
+
+/
+
+&MOVIES
+
+u_min = -20., u_max=20.
+
+v_min = -20., v_max=20.
+
+tasfc_min = 295., tasfc_max=303.
+
+qvsfc_min = 0.015, qvsfc_max=0.02
+
+/

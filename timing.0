@@ -1,0 +1,40 @@
+Procid = 0
+Wallclock timer cost est.:        0 usec per start/stop pair
+CPU accumulation interval is 0.01 seconds
+
+Stats for thread 0:
+Name               Called       Wallclock    Percent of total  
+          total            1    347.868          100.000
+       initialize          1      0.325            0.093
+     boundaries         1502     19.381            5.571
+       diagnose          361     11.214            3.224
+      print_out          361      0.202            0.058
+           kurant        360      2.036            0.585
+             zero        360      1.435            0.413
+         buoyancy        360      2.170            0.624
+          forcing        360      0.255            0.073
+          nudging        360      0.779            0.224
+          damping        360      0.354            0.102
+          surface        360      0.034            0.010
+         tke_full        360      5.182            1.490
+       advect_mom        360      7.178            2.063
+      diffuse_mom        360      7.331            2.107
+         pressure        360     25.585            7.355
+            adams        360      8.522            2.450
+   advect_scalars       3600    132.151           37.989
+  diffuse_scalars       3600     44.361           12.752
+       upperbound        360      0.008            0.002
+       micro_proc        360     62.929           18.090
+           2D_out        360      0.090            0.026
+           3D_out        360      0.000            0.000
+       statistics         30      3.075            0.884
+  micro_statistic         30      2.305            0.663
+   sgs_statistics         30      0.043            0.012
+         stat_out          3      0.049            0.014
+      restart_out          3      4.119            1.184
+
+TIMER OVERHEAD (wallclock seconds) =     0.044279
+
+Same stats sorted by timer with thread number appended:
+Name               Called       Wallclock    Percent of total  
+OVERHEAD.0   (wallclock seconds) =     0.044279

@@ -1,0 +1,135 @@
+&SGS_TKE
+
+ dosmagor       = .true.,
+
+/
+
+ &PARAMETERS
+
+ nrestart = 0
+
+ caseid ='OceanInt512x512x64',
+
+ CEM = .true.,
+
+ OCEAN = .true.,
+
+ LAND = .false.,
+
+ dosgs          = .true.,
+
+ dodamping      = .true.,
+
+ doupperbound   = .true.,
+
+ docloud        = .true.,
+
+ doprecip       = .true.,
+
+ dolongwave     = .false.,
+
+ doshortwave    = .false.,
+
+ dosurface      = .true.,
+
+ dolargescale   = .true.,
+
+ doradforcing   = .true.,
+
+ dosfcforcing   = .false.,
+
+ docoriolis     = .false.,
+
+ donudging_uv   = .true.,
+
+ donudging_tq   = .false.,
+
+ dodynamicocean = .false.,
+
+ SFC_FLX_FXD = .false.,
+
+ SFC_TAU_FXD = .false.,
+
+ tauls = 21600.,
+
+ tabs_s=299.88,
+
+ depth_slab_ocean=6.,
+
+ fluxt0=15.0, 
+
+ fluxq0=210.0,
+
+ dx =   512.,
+
+ dy =   512.,
+
+ dt =   5.,
+
+ latitude0= 8.5,
+
+ longitude0=-23.5,
+
+ nrad = 20,
+
+ day0=0,
+
+ nrad = 45,
+
+ doisccp=.true.,
+
+ domodis=.true.,
+
+ domisr=.true.,
+
+ nstop          = 172800,
+
+ nprint         = 720,
+
+ nstat          = 720,
+
+ nstatfrq       = 10,
+
+ doSAMconditionals = .false.
+
+ dosatupdnconditionals = .false.
+
+ nsave2D        = 720,
+
+ nsave2Dstart   = 0,
+
+ nsave2Dend     = 99960480,
+
+ nsave3D        = 1440,
+
+ nsave3Dstart   = 0,
+
+ nsave3Dend     = 99960480,
+
+ nstatmom       = 1440,
+
+ nstatmomstart  = 99998640,
+
+ nstatmomend    = 99960480,
+
+savemombin = .false.,
+
+ nmovie       = 1440
+
+ nmoviestart  = 0
+
+ nmovieend    = 99960480
+
+/
+
+&MOVIES
+
+u_min = -20., u_max=20.
+
+v_min = -20., v_max=20.
+
+tasfc_min = 295., tasfc_max=303.
+
+qvsfc_min = 0.015, qvsfc_max=0.02
+
+/
